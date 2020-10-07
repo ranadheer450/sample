@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head >
+<meta charset="utf-8"/>
+<title>welcome </title>
+<style>
+    h1{ 
+        color:red;
+
+    }
+    body{
+        font-family:Arial, sans-serif;
+        font-size:13px;
+    }
+    p.text-center{
+        text-align:center;
+        /*even though there are two elements with class text-center name it gonna apply for only one element because i have mentioned p.text-center
+        which makes it specific to the p tag if instead of p if i use h1 then it have specific to the h1 to make it to apply for the both classes 
+        then i have to use simply .text-center(class name) instead of p.text-center*/
+
+    }
+    p{
+        text-align:center;
+    }
+    #myFunction{
+        background:blue;
+        color:red;
+        width:100px;
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right:20px;
+        padding-left:2px;
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:20px;
+        margin-bottom:20px;
+        border-width:3px;
+        border-color:red;
+        border-style:solid;
+    }
+    ul.list-1{
+        list-style:none;
+        padding:0;
+        line-height:2.2em;
+    }
+    ul.list-1 li{
+        border-bottom:1px dotted #666;
+        /*border-style:dotted;
+        border-color:#666;*/
+    }
+    .wrapper{
+        border:#ff0000 1px solid;
+        width:400px;
+        height:200px;
+        position:relative;
+        left:100px;
+        right:50px;
+        background-image:url('backgroundImage.jpeg');
+    }
+    .inside{
+        border:#00ff00 2px solid;
+        width:50px;
+        height:50px;
+        position:absolute;
+        left:60px;
+        right:90px;
+    }
+
+</style>
+<script>
+    var ch= 8;
+</script>
+<meta charset="utf-8"/>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+
+</head>
+<body>
+    <h1 class="text-center">This line is to simply illustrate that i gonna use css to output this in red color</h1>
+    <p class="text-center">this i have given class name text-center and made it to print in center of the line using text-align </p>
+    <p>This is another paragraph</p>
+    <div id="myFunction">This is me</div>
+    <ul class="list-1">
+        <li>statistics</li>
+        <li>Linear agebra</li>
+        <li>Calculas</li>
+        <li>Machine learning</li>
+        <li>Deep Learning</li>
+    </ul>
+    <div class="wrapper">
+        <div class="inside">
+
+        </div>
+    </div>
+    <a href="pseudo_Classes.html">Pseudo classes</a>
+
+</body>
+<head>
+</html>
