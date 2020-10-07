@@ -1,99 +1,530 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@ranadheer450 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+krajit
+/
+krajit.github.io
+0
+12
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+krajit.github.io/sympy/index.html
+@krajit
+krajit google tracking added on few pages
+Latest commit 6a9d847 on Jan 13, 2019
+ History
+ 1 contributor
+484 lines (94 sloc)  4.9 KB
+  
 <!DOCTYPE html>
-<html lang="en"> 
-<head >
-<meta charset="utf-8"/>
-<title>welcome </title>
-<style>
-    h1{ 
-        color:red;
+<html lang="en-us">
 
-    }
-    body{
-        font-family:Arial, sans-serif;
-        font-size:13px;
-    }
-    p.text-center{
-        text-align:center;
-        /*even though there are two elements with class text-center name it gonna apply for only one element because i have mentioned p.text-center
-        which makes it specific to the p tag if instead of p if i use h1 then it have specific to the h1 to make it to apply for the both classes 
-        then i have to use simply .text-center(class name) instead of p.text-center*/
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-    }
-    p{
-        text-align:center;
-    }
-    #myFunction{
-        background:blue;
-        color:red;
-        width:100px;
-        padding-top:20px;
-        padding-bottom:20px;
-        padding-right:20px;
-        padding-left:2px;
-        margin-left:20px;
-        margin-right:20px;
-        margin-top:20px;
-        margin-bottom:20px;
-        border-width:3px;
-        border-color:red;
-        border-style:solid;
-    }
-    ul.list-1{
-        list-style:none;
-        padding:0;
-        line-height:2.2em;
-    }
-    ul.list-1 li{
-        border-bottom:1px dotted #666;
-        /*border-style:dotted;
-        border-color:#666;*/
-    }
-    .wrapper{
-        border:#ff0000 1px solid;
-        width:400px;
-        height:200px;
-        position:relative;
-        left:100px;
-        right:50px;
-        background-image:url('backgroundImage.jpeg');
-    }
-    .inside{
-        border:#00ff00 2px solid;
-        width:50px;
-        height:50px;
-        position:absolute;
-        left:60px;
-        right:90px;
-    }
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="keywords" content="Ajit Kumar Shiv Nadar Openfoam numerical pde cfd fluid finite element assistant professor greater noida gomia">
+  <meta name="keywords" content="">
 
-</style>
-<script>
-    var ch= 8;
-</script>
-<meta charset="utf-8"/>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130040333-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+  
+          gtag('config', 'UA-130040333-2');
+  
+      </script>
+
+  <title>
+
+    Content &middot; Ajit Kumar
+
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- mathJax : AK: Aug 15   -->
+  <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+  <script type="text/javascript" src="/MathJax/MathJax.js?config=TeX-AMS_HTML,local/local.js"></script>
+
+  <!-- search engine optimization: AK Aug 18 2017    -->
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+  <title>Content | Ajit Kumar</title>
+  <meta name="generator" content="Jekyll v3.7.4" />
+  <meta property="og:title" content="Content" />
+  <meta name="author" content="Ajit Kumar" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="Assistant Professor Department of Mathematics Shiv Nadar University" />
+  <meta property="og:description" content="Assistant Professor Department of Mathematics Shiv Nadar University" />
+  <link rel="canonical" href="http://localhost:4000/sympy/" />
+  <meta property="og:url" content="http://localhost:4000/sympy/" />
+  <meta property="og:site_name" content="Ajit Kumar" />
+  <script type="application/ld+json">
+    {
+      "@type": "WebPage",
+      "headline": "Content",
+      "url": "http://localhost:4000/sympy/",
+      "author": {
+        "@type": "Person",
+        "name": "Ajit Kumar"
+      },
+      "description": "Assistant Professor Department of Mathematics Shiv Nadar University",
+      "@context": "http://schema.org"
+    }
+  </script>
+  <!-- End Jekyll SEO tag -->
 
 </head>
-<body>
-    <h1 class="text-center">This line is to simply illustrate that i gonna use css to output this in red color</h1>
-    <p class="text-center">this i have given class name text-center and made it to print in center of the line using text-align </p>
-    <p>This is another paragraph</p>
-    <div id="myFunction">This is me</div>
-    <ul class="list-1">
-        <li>statistics</li>
-        <li>Linear agebra</li>
-        <li>Calculas</li>
-        <li>Machine learning</li>
-        <li>Deep Learning</li>
-    </ul>
-    <div class="wrapper">
-        <div class="inside">
 
-        </div>
+
+<body>
+  <!--  class="theme-base-0f"> -->
+
+  <!-- side bar-->
+
+  <div class="sidebar">
+
+    <nav class="sidebar-nav" style="text-align:left;">
+
+      <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a class="sidebar-nav-item active" href="/sympy/">Content</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li> <a class="sidebar-nav-item" href="/sympy/generalCalculus/generalCalculus.html">Function Definition and
+            plotting</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li> <a class="sidebar-nav-item" href="/sympy/TaylorPolynomial/TaylorPolynomial.html">Taylor Polynomials</a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li> <a class="sidebar-nav-item" href="/sympy/parametricPlot/parametricPlot.html">Parametric Curves plotting</a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li> <a class="sidebar-nav-item" href="/sympy/polarCurves/polarCurves.html">Polar Curves</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li> <a class="sidebar-nav-item" href="/sympy/vectorFields/vectorFields.html">Plotting Vector Fields in Python</a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+        <li> <a class="sidebar-nav-item" href="/sympy/integration/integration.html">Vector field integration</a> </li>
+
+
+
+
+
+
+
+
+      </ul>
+    </nav>
+
+
+    <div class="container sidebar-sticky">
+      <p>Author: <a href="/aboutMe/"> Ajit Kumar </a></p>
     </div>
-    <a href="pseudo_Classes.html">Pseudo classes</a>
+
+  </div>
+
+
+
+
+
+  <div class="content container">
+    <h2 id="essential-sympy-tutorial-for-a-multivariable-calculus-course">Essential Sympy tutorial for a multivariable
+      calculus course</h2>
+
+    <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- do nothing -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li> <a href="/sympy/generalCalculus/generalCalculus.html">Function Definition and plotting</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li> <a href="/sympy/TaylorPolynomial/TaylorPolynomial.html">Taylor Polynomials</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li> <a href="/sympy/parametricPlot/parametricPlot.html">Parametric Curves plotting</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li> <a href="/sympy/polarCurves/polarCurves.html">Polar Curves</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li> <a href="/sympy/vectorFields/vectorFields.html">Plotting Vector Fields in Python</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+      <li> <a href="/sympy/integration/integration.html">Vector field integration</a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+
+  </div>
 
 </body>
-<head>
+
 </html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
